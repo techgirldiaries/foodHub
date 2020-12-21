@@ -1,0 +1,530 @@
+@import url("https://font.googleapis.com/css?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 1000px;
+}
+
+section {
+    padding: 100px;
+}
+
+p {
+    color: #111;
+    font-weight: 300;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background: url(images/bg.jpg);
+}
+
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2 {
+    color: white;
+    font-size: 5em;
+}
+
+.banner .content p {
+    color: white;
+    font-size: 1em;
+}
+
+.btn {
+    color: white;
+    font-size: 1em;
+    transition: 0.5s;
+    margin-top: 20px;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    display: inline-block;    
+    background: darkorange;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+}
+
+/* Header */
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 10000;
+    position: fixed;
+    padding: 40px 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.sticky {
+    background: white;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+header .logo {
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header .logo span {
+    color: darkorange;
+}
+
+header .nav {
+    display: flex;
+    position: relative;
+}
+
+header .nav li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .nav li a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+header.sticky .nav li a {
+    color: #111;
+}
+
+header .nav li a:hover {
+    color: darkorange;
+}
+
+/* About */
+.row {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.row .col50 {
+    width: 48%;
+    position: relative;
+}
+
+.titleText {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span {
+    color: darkorange;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.row .col50 .imgBx {
+    width: 100%;
+    height: 100%;
+    /* min-height: 300px; */
+    position: relative;
+}
+
+.row .col50 .imgBx img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* Menu */
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.menu .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid white;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+.menu .content .box .imgBx {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.menu .content .box .imgBx img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.menu .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.menu .content .box .text h3 {
+    color: #111;
+    font-weight: 400;
+}
+
+/* Expert */
+.expert .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;  
+    flex-direction: row;
+    justify-content: center;
+}
+
+.expert .content .box {
+    width: 250px;
+    margin: 15px;
+}
+
+.expert .content .box .imgBx {
+    
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.expert .content .box .imgBx img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.expert .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.expert .content .box .text h3 {
+        color: #111;
+        font-weight: 400;
+}
+
+/* Testimonials */
+.reviews {
+    background-size: cover;
+    background: url(images/bg2.jpg);
+}
+
+.white .titleText,
+.white p {
+    color: white;
+}
+
+.reviews .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.reviews .content .box {    
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    background: white;
+    align-items: center;    
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reviews .content .box .imgBx {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.reviews .content .box .imgBx img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.reviews .content .box .text {
+    text-align: center;
+}
+
+.reviews .content .box .text p {
+    color: gray;
+    font-style: italic;
+}
+
+.reviews .content .box .text h3 {
+    color: white;    
+    font-size: 1em;
+    color: darkorange;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Contact */
+.contact {
+    background-size: cover;
+    background: url(images/bg3.jpg);
+}
+
+.contactForm {
+    max-width: 500px;
+    margin-top: 50px;
+    padding: 75px 50px;
+    background: white;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+
+.contactForm h3 {
+    color: #111;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    resize: none;
+    color: #111;
+    padding: 10px;
+    outline: none;
+    font-style: 16px;
+    font-weight: 200;
+    border: 1px solid gray;
+}
+
+.contactForm .inputBox 
+input[type="submit"] {
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    max-width: 100px;
+    transition: 0.5s;
+    font-weight: 500;
+    letter-spacing: 2px;
+    display: inline-block;
+    text-decoration: none;
+    background: darkorange;
+    text-transform: uppercase;
+}
+
+/* Footer */
+.copyrightText {
+    padding: 8px 40px;
+    text-align: center;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.copyrightText p {
+    color: #333;
+}
+
+.copyrightText a {
+    font-weight: 500;
+    color: darkorange;
+    text-decoration: none;
+}
+
+/* Sizing */
+@media (max-width: 991px) {
+    /*Header*/
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+
+    header .nav {
+        display: none;
+    }
+
+    header .nav.active {
+        left: 0;
+        top: 60px;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        background: white;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: calc (100% - 68px);
+    }
+
+    header .nav li {
+        margin-left: 0;
+    }
+
+    header .nav li a {
+        color: white;
+        font-size: 1.6em;
+    }
+
+    /*Menu Toggle*/
+    .menuToggle {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: relative;
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background: url(images/menu.png);
+    }
+
+    .menuToggle.active {
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background: url(images/close.png)
+    }
+
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    /*Banner*/
+    .banner .content h2 {
+        color: white;
+        font-size: 3em;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col50 {
+        width: 100%;
+        position: relative;
+    }
+
+    .row .col50 .imgBx {
+        width: 100%;
+        height: 300px;
+        /* min-height: 300px; */
+        margin-top: 20px;
+        position: relative;
+    }
+
+    /*Menu*/
+    .menu .content {
+        margin-top: 20px;
+    }
+
+    .menu .content .box {
+        margin: 10px;
+    }
+
+    .menu .content .box .imgBx {
+        width: 100%;
+        height: 260px;
+        position: relative;
+    }
+
+    .title {
+        text-align: center;
+    }
+    .titleText {
+        font-size: 1.8em;
+        font-weight: 300;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    /*Testimonials*/
+    .testimonials .content .box {
+        width: 340px;
+        margin: 10px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*Contact*/
+    .contactForm {
+        max-width: 500px;
+        margin-top: 20px;
+        padding: 35px 40px;
+        margin-bottom: 30px;
+        background: white;
+        box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    }
+}
+
+@media (max-width: 480px) {
+    /*Banner*/
+    .banner .content h2 {
+        color: white;
+        font-size: 2.2em;
+    }
+}
